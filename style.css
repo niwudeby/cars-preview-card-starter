@@ -1,0 +1,126 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark: hsl(184, 100%, 22%);
+  --very-dark: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h3 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.bright-orange {
+  background-color: var(--bright-orange);
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.bright-orange .btn {
+  color: var(--bright-orange);
+}
+
+.dark {
+  background-color: var(--dark);
+  color: #fff;
+}
+
+.dark .btn {
+  color: var(--dark);
+}
+
+.very-dark {
+  background-color: var(--very-dark);
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+.very-dark .btn {
+  color: var(--very-dark);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.container {
+  padding: 20px;
+}
+
+.Box {
+  padding: 30px;
+}
+
+.Box img {
+  margin-bottom: 25px;
+}
+
+.Box h3 {
+  margin-bottom: 20px;
+}
+
+.Box p {
+  margin-bottom: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .bright-orange {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .very-dark {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .Box {
+    padding: 45px;
+  }
+
+  .Box p {
+    margin-bottom: 80px;
+  }
+}
